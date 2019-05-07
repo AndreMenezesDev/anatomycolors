@@ -11,11 +11,11 @@ export class AppComponent {
   constructor(private route: Router){}
 
   title = 'app';
-  ocultar: boolean=false;
+  ocultarInicio: boolean=false;
 
 
   trocar(){
-    this.ocultar=true;
+    this.ocultarInicio=true;
     this.route.navigate(['index']);
   }
 }

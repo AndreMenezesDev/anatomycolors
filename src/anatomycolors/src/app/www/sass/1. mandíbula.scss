@@ -1,5 +1,11 @@
 @charset "UTF-16";
 
+.focoElemento
+{
+    width: 100%;
+    align-content: center;
+}
+
 .fil0 {fill:black}
 
 @mixin fil2($flag: false) {

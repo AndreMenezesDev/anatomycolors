@@ -18,11 +18,10 @@ export class IndexComponent {
 
   public ngOnit()
   { 
-
   }  	
   
   fim(){
-    // = false;
+    this.ocultar = false;
   }
 
   capturarCor(cor){
