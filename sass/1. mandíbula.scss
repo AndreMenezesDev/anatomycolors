@@ -1,0 +1,57 @@
+@charset "UTF-16";
+
+.fil0 {fill:black}
+
+@mixin fil2($flag: false) {
+    
+    @if $flag{
+        fill: red;
+    }@else{
+    color: black;
+    background-color:red;
+    }
+}
+
+.fil2{
+    @include fil2();
+}
+
+.fil2-set{
+    @include fil2(true);
+}
+
+@mixin fil3($flag: false) {
+    
+    @if $flag{
+        fill: blue;
+    }@else{
+    color: black;
+    background-color:blue;
+    }
+}
+
+.fil3{
+    @include fil3();
+}
+
+.fil3-set{
+    @include fil3(true);
+}
+
+@mixin fil4($flag: false) {
+    
+    @if $flag{
+        fill: crimson;
+    }@else{
+    color: black;
+    background-color:crimson;
+    }
+}
+
+.fil4{
+    @include fil4();
+}
+
+.fil4-set{
+    @include fil4(true);
+}
