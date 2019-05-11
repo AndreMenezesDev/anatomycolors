@@ -1,5 +1,19 @@
 @charset "UTF-16";
 
+.container{
+    width: 100%;
+    height: 100%;
+  }
+
+  
+.correto{
+    fill: green;
+  }
+  
+  .errado{
+    fill:red;
+  }
+
 .focoElemento
 {
     width: 100%;

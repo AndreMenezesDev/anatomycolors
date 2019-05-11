@@ -1,26 +1,73 @@
+.container {
+width: 100%;
+height: 100%; }
+
+.correto {
+fill: green; }
+
+.errado {
+fill: red; }
+
+.focoElemento {
+width: 100%;
+align-content: center; }
+
 .fil0 {
-    fill: black; }
-  
-  .fil2 {
-    color: black;
-    background-color: red; }
-  
-  .fil2-set {
-    fill: red; }
-  
-  .fil3 {
-    color: black;
-    background-color: blue; }
-  
-  .fil3-set {
-    fill: blue; }
-  
-  .fil4 {
-    color: black;
-    background-color: crimson; }
-  
-  .fil4-set {
-    fill: crimson; }
-  
-  /*# sourceMappingURL=1.%20mand%A1bula.css.map */
-  
+fill: black; }
+
+.fil2 {
+color: black;
+background-color: red; }
+
+.fil2-set {
+fill: red; }
+
+.fil3 {
+color: black;
+background-color: blue; }
+
+.fil3-set {
+fill: blue; }
+
+.fil4 {
+color: black;
+background-color: crimson; }
+
+.fil4-set {
+fill: crimson; }
+
+.fil5 {
+color: black;
+background-color: yellow; }
+
+.fil5-set {
+fill: yellow; }
+
+.fil6 {
+color: black;
+background-color: tomato; }
+
+.fil6-set {
+fill: tomato; }
+
+.fil7 {
+color: black;
+background-color: royalblue; }
+
+.fil7-set {
+fill: royalblue; }
+
+.fil8 {
+color: black;
+background-color: sienna; }
+
+.fil8-set {
+fill: sienna; }
+
+.fil9 {
+color: black;
+background-color: #f58709; }
+
+.fil9-set {
+fill: #f58709; }
+/*# sourceMappingURL=1.%20mand%A1bula.css.map */

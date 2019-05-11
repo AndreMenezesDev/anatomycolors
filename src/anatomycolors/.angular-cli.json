@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+        "app/www/css/1. mandíbula.css",
         "app/www/bootstrap/css/bootstrap.css",
         "app/www/bootstrap/css/bootstrap.min.css"
       ],
