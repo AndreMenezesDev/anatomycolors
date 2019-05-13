@@ -13,7 +13,7 @@ export class IndexComponent {
   ocultar: boolean = true;
   color = '#CCCCCC';
   tagResposta = "Resp";
-  listaElementos = ["Mandibula", "Maxilar", "Zigomaticos", "Nasais", "Estenoide", "Nasais_inferiores", "Parietais", "Osso_Frontal"];
+  listaElementos = ["Temporais","Mandibula", "Maxilar", "Zigomaticos", "Nasais", "Estenoide", "Nasais_inferiores", "Parietais", "Osso_Frontal"];
 
 
 
@@ -25,65 +25,66 @@ export class IndexComponent {
     this.listaElementos.forEach(selecao => {
       
       var objetoSelecionado = document.getElementById(selecao);
-
-      for (var i = 0; i < objetoSelecionado.childElementCount; i++) {
-        for (let j = 0; j < objetoSelecionado.children[i].children.length; j++) {
-          var componentObjeto = objetoSelecionado.children[i].children[j];
-          //elemento.attributes.getNamedItem("fill").nodeValue = novaCor;
-          
-          var classeObjetoFormatada;
-          try {
-            classeObjetoFormatada = componentObjeto.getAttributeNode("class").nodeValue;
-          } catch (error) {
-            classeObjetoFormatada = "";
-          }
-          
-          var classeObjeto = classeObjetoFormatada.replace("-set", '');
-
-          var btn = "btn-" + selecao;
-
-          var elementoResposta = document.getElementById(btn).className;
-          var classeResposta = elementoResposta.substr(2);
-
-          if (classeObjeto == classeResposta) {
+      try{
+        for (var i = 0; i < objetoSelecionado.childElementCount; i++) {
+          for (let j = 0; j < objetoSelecionado.children[i].children.length; j++) {
+            var componentObjeto = objetoSelecionado.children[i].children[j];
+            //elemento.attributes.getNamedItem("fill").nodeValue = novaCor;
             
-            var idComponente = selecao + this.tagResposta;
-            var novaCor = "correto";
+            var classeObjetoFormatada;
+            try {
+              classeObjetoFormatada = componentObjeto.getAttributeNode("class").nodeValue;
+            } catch (error) {
+              classeObjetoFormatada = "";
+            }
+            
+            var classeObjeto = classeObjetoFormatada.replace("-set", '');
 
-            var elResp = document.getElementById(idComponente);
-            for (var x = 0; x < elResp.childElementCount; x++) {
-              for (let z = 0; z < elResp.children[x].children.length; z++) {
-                var nodeElemento = elResp.children[x].children[z];                
-                nodeElemento.setAttribute("class", novaCor);            
+            var btn = "btn-" + selecao;
+
+            var elementoResposta = document.getElementById(btn).className;
+            var classeResposta = elementoResposta.substr(2);
+
+            if (classeObjeto == classeResposta) {
+              
+              var idComponente = selecao + this.tagResposta;
+              var novaCor = "correto";
+
+              var elResp = document.getElementById(idComponente);
+              for (var x = 0; x < elResp.childElementCount; x++) {
+                for (let z = 0; z < elResp.children[x].children.length; z++) {
+                  var nodeElemento = elResp.children[x].children[z];                
+                  nodeElemento.setAttribute("class", novaCor);            
+                  
+                }
                 
               }
-              
+
             }
+            else {
+              
+              var idComponente = selecao + this.tagResposta;
+              var novaCor = "errado";            
 
-          }
-          else {
-            
-            var idComponente = selecao + this.tagResposta;
-            var novaCor = "errado";
-            
+              try{
 
-            try{
-
-            var elResp = document.getElementById(idComponente);
-            for (var a = 0; i < elResp.childElementCount; a++) {
-              for (let q = 0; q < elResp.children[a].children.length; q++) {
-                var nodeElemento = elResp.children[a].children[q];                
-                nodeElemento.setAttribute("class", novaCor);            
+              var elResp = document.getElementById(idComponente);
+              for (var a = 0; i < elResp.childElementCount; a++) {
+                for (let q = 0; q < elResp.children[a].children.length; q++) {
+                  var nodeElemento = elResp.children[a].children[q];                
+                  nodeElemento.setAttribute("class", novaCor);            
+                  
+                }
                 
               }
-              
-            }
-          }catch(error){
+            }catch(error){
 
-          }
+            }
+            }
           }
         }
       }
+      catch(error){}
     });
 
   }
@@ -115,7 +116,28 @@ export class IndexComponent {
   };
 
   reiniciar() {
-    $('g').children().removeClass();
+    
+    var flag = false;
+
+    this.listaElementos.forEach(selecao => {
+
+    try{
+
+      var elResp = document.getElementById(selecao);
+      for (var a = 0; a < elResp.childElementCount; a++) {
+        for (let q = 0; q < elResp.children[a].children.length; q++) {
+          var nodeElemento = elResp.children[a].children[q];                
+          nodeElemento.setAttribute("class", this.color);            
+          
+        }
+        
+      }
+    }catch(error){
+
+    }
+
+      
+    });
     this.ocultar = true;
 
   }
