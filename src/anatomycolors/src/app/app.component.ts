@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
+  ocultar: boolean = false;
+
   constructor(private route: Router){}
 
   title = 'app';
-  ocultar: boolean=false;
-
 
   trocar(){
-    this.ocultar=true;
+    this.ocultar = true;
     this.route.navigate(['index']);
   }
 }
