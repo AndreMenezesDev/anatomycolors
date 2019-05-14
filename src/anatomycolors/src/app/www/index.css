@@ -27,63 +27,81 @@ background-color:black;
 
 .fil2 {
 color: black;
-background-color: red; }
+background-color: red; 
+font-size: x-large;
+}
 
 .fil2-set {
 fill: red; }
 
 .fil3 {
 color: black;
-background-color: blue; }
+background-color: blue; 
+font-size: x-large;
+}
 
 .fil3-set {
 fill: blue; }
 
 .fil4 {
 color: black;
-background-color: crimson; }
+background-color: crimson; 
+font-size: x-large;
+}
 
 .fil4-set {
 fill: crimson; }
 
 .fil5 {
 color: black;
-background-color: yellow; }
+background-color: yellow; 
+font-size: x-large;
+}
 
 .fil5-set {
 fill: yellow; }
 
 .fil6 {
 color: black;
-background-color: tomato; }
+background-color: tomato; 
+font-size: x-large;
+}
 
 .fil6-set {
 fill: tomato; }
 
 .fil7 {
 color: black;
-background-color: royalblue; }
+background-color: royalblue; 
+font-size: x-large;
+}
 
 .fil7-set {
 fill: royalblue; }
 
 .fil8 {
 color: black;
-background-color: sienna; }
+background-color: sienna; 
+font-size: x-large;
+}
 
 .fil8-set {
 fill: sienna; }
 
 .fil9 {
 color: black;
-background-color: #f58709; }
+background-color: #f58709; 
+font-size: x-large;
+}
 
 .fil9-set {
 fill: #f58709; }
 
 .fil10 {
 color: black;
-background-color:rgb(0, 238, 59); }
+background-color:rgb(0, 238, 59); 
+font-size: x-large;
+}
 
 .fil10-set {
 fill: rgb(0, 238, 59); }
